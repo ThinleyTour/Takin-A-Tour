@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust Travels | Start</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/do.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Takin' A Tour">
+                <!-- <span>Takin'</span>A Tour -->
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="do.html">What to Do</a></li>
+                    <li><a href="stay.html">Where to Stay</a></li>
+                    <li><a href="eat.html">Where to Eat</a></li>
+                    <li><a href="visit.html">Visitor Info</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-traveling-along-a-coastal-road-with-a-view-of-the-sea-34455-large.mp4"
+                type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Explore. Dream. Discover.</h1>
+            <p>Embark on unforgettable journeys to the world's most breathtaking destinations with our expert travel
+                planners.</p>
+            <div class="hero-btns">
+                <a href="#destinations" class="btn">Explore Destinations</a>
+                <a href="#packages" class="btn btn-accent">Special Offers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Filter -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Find Your Perfect Adventure</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Filter activities by category to find exactly what you're looking
+                for</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button onclick="filterActivities('all')"
+                class="filter-btn active bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition hover:bg-blue-700">
+                All Activities
+            </button>
+            <button onclick="filterActivities('adventure')"
+                class="filter-btn bg-gray-200 text-gray-800 px-6 py-2 rounded-full font-medium transition hover:bg-gray-300">
+                <i class="fas fa-hiking mr-2"></i> Adventure
+            </button>
+            <button onclick="filterActivities('nature')"
+                class="filter-btn bg-gray-200 text-gray-800 px-6 py-2 rounded-full font-medium transition hover:bg-gray-300">
+                <i class="fas fa-tree mr-2"></i> Nature
+            </button>
+            <button onclick="filterActivities('culture')"
+                class="filter-btn bg-gray-200 text-gray-800 px-6 py-2 rounded-full font-medium transition hover:bg-gray-300">
+                <i class="fas fa-landmark mr-2"></i> Culture
+            </button>
+            <button onclick="filterActivities('relaxation')"
+                class="filter-btn bg-gray-200 text-gray-800 px-6 py-2 rounded-full font-medium transition hover:bg-gray-300">
+                <i class="fas fa-umbrella-beach mr-2"></i> Relaxation
+            </button>
+        </div>
+
+        <!-- Activities Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="activities-container">
+            <!-- Adventure Activities -->
+            <div class="activity-card adventure bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="h-48 bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1531058020387-3be344556be6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-hiking text-blue-600 mr-2"></i>
+                        <span class="text-sm font-medium text-blue-600">ADVENTURE</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Mountain Trekking</h3>
+                    <p class="text-gray-600 mb-4">Challenge yourself with breathtaking hikes through majestic mountain
+                        ranges with expert guides.</p>
+                    <button class="text-blue-600 font-medium hover:text-blue-800 transition">Learn More →</button>
+                </div>
+            </div>
+
+            <!-- Nature Activities -->
+            <div class="activity-card nature bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="h-48 bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-tree text-green-600 mr-2"></i>
+                        <span class="text-sm font-medium text-green-600">NATURE</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Wildlife Safari</h3>
+                    <p class="text-gray-600 mb-4">Get up close with exotic wildlife in their natural habitats with our
+                        expert naturalist guides.</p>
+                    <button class="text-blue-600 font-medium hover:text-blue-800 transition">Learn More →</button>
+                </div>
+            </div>
+
+            <!-- Culture Activities -->
+            <div class="activity-card culture bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="h-48 bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-landmark text-purple-600 mr-2"></i>
+                        <span class="text-sm font-medium text-purple-600">CULTURE</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Historic City Tours</h3>
+                    <p class="text-gray-600 mb-4">Explore ancient cities and UNESCO World Heritage sites with
+                        knowledgeable local guides.</p>
+                    <button class="text-blue-600 font-medium hover:text-blue-800 transition">Learn More →</button>
+                </div>
+            </div>
+
+            <!-- Relaxation Activities -->
+            <div class="activity-card relaxation bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="h-48 bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-umbrella-beach text-yellow-600 mr-2"></i>
+                        <span class="text-sm font-medium text-yellow-600">RELAXATION</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Beach Retreat</h3>
+                    <p class="text-gray-600 mb-4">Unwind on pristine beaches with crystal-clear waters and luxurious
+                        beachfront accommodations.</p>
+                    <button class="text-blue-600 font-medium hover:text-blue-800 transition">Learn More →</button>
+                </div>
+            </div>
+
+            <!-- Adventure Activities -->
+            <div class="activity-card adventure bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="h-48 bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80');">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-hiking text-blue-600 mr-2"></i>
+                        <span class="text-sm font-medium text-blue-600">ADVENTURE</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">White Water Rafting</h3>
+                    <p class="text-gray-600 mb-4">Experience the thrill of navigating through roaring rapids with our
+                        certified rafting guides.</p>
+                    <button class="text-blue-600 font-medium hover:text-blue-800 transition">Learn More →</button>
+                </div>
+            </div>
+
+            <!-- Nature Activities -->
+            <div class="activity-card nature bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="h-48 bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1470114716159-e389f8712fda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-tree text-green-600 mr-2"></i>
+                        <span class="text-sm font-medium text-green-600">NATURE</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Rainforest Exploration</h3>
+                    <p class="text-gray-600 mb-4">Discover the incredible biodiversity of tropical rainforests with
+                        expert eco-guides.</p>
+                    <button class="text-blue-600 font-medium hover:text-blue-800 transition">Learn More →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Activity - Parallax Section -->
+    <div class="parallax fade-in"
+        style="background-image: url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+        <div class="bg-black bg-opacity-50 h-full flex items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-white">
+                <div class="max-w-2xl">
+                    <span class="text-sm font-medium text-blue-400 mb-2 inline-block">FEATURED ACTIVITY</span>
+                    <h2 class="text-4xl font-bold mb-4">Hot Air Balloon Safari</h2>
+                    <p class="text-xl mb-6">Experience the breathtaking beauty of the savanna from above at sunrise. Our
+                        hot air balloon safaris offer a unique perspective on wildlife and landscapes.</p>
+                    <div class="flex flex-wrap gap-4 mb-6">
+                        <span class="bg-blue-600 bg-opacity-80 px-3 py-1 rounded-full text-sm"><i
+                                class="fas fa-clock mr-1"></i> 4-5 hours</span>
+                        <span class="bg-blue-600 bg-opacity-80 px-3 py-1 rounded-full text-sm"><i
+                                class="fas fa-user-friends mr-1"></i> Small groups</span>
+                        <span class="bg-blue-600 bg-opacity-80 px-3 py-1 rounded-full text-sm"><i
+                                class="fas fa-calendar-alt mr-1"></i> Year-round</span>
+                    </div>
+                    <button
+                        class="bg-white text-blue-600 hover:bg-blue-100 font-bold py-3 px-6 rounded-full transition duration-300">
+                        Book This Experience
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Traveler Experiences</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Hear what our adventurers have to say about their experiences</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md fade-in">
+                <div class="flex items-center mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J."
+                        class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h4 class="font-bold">Sarah J.</h4>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600">"The mountain trekking experience was absolutely incredible. Our guide was
+                    knowledgeable and made sure everyone was safe while having fun. The views were breathtaking!"</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md fade-in">
+                <div class="flex items-center mb-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T."
+                        class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h4 class="font-bold">Michael T.</h4>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600">"The hot air balloon safari was the highlight of our trip. Seeing the wildlife
+                    from above at sunrise was a once-in-a-lifetime experience. Highly recommend!"</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md fade-in">
+                <div class="flex items-center mb-4">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma L."
+                        class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h4 class="font-bold">Emma L.</h4>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600">"The cultural tours were so insightful. We learned so much about the history
+                    and traditions of the places we visited. Our guide was passionate and made everything come alive."
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-blue-600 text-white py-16 fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready for Your Next Adventure?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Let us help you plan the perfect trip filled with unforgettable
+                experiences tailored just for you.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button
+                    class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Contact Our Experts
+                </button>
+                <button
+                    class="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Browse All Tours
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Wanderlust Travels is a premier travel agency specializing in creating unforgettable experiences
+                        around the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Travel Packages</a></li>
+                        <li><a href="#blog">Travel Blog</a></li>
+                        <li><a href="#visitor-info">Visitor Info</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Booking Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for travel inspiration, exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email Address" required />
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wanderlust Travels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-nav">
+                <button id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+                <button id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/do.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels | Explore the World</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Takin' A Tour">
+                <!-- <span>Takin'</span>A Tour -->
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="do.html">What to Do</a></li>
+                    <li><a href="stay.html">Where to Stay</a></li>
+                    <li><a href="eat.html">Where to Eat</a></li>
+                    <li><a href="visit.html">Visitor Info</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-traveling-along-a-coastal-road-with-a-view-of-the-sea-34455-large.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Explore. Dream. Discover.</h1>
+            <p>Embark on unforgettable journeys to the world's most breathtaking destinations with our expert travel
+                planners.</p>
+            <div class="hero-btns">
+                <a href="#destinations" class="btn">Explore Destinations</a>
+                <a href="#packages" class="btn btn-accent">Special Offers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Countdown -->
+    <section class="promo-countdown">
+        <div class="container">
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <div class="countdown-value" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+            <p class="promo-text">Limited time offer: <span>30% OFF</span> all summer destinations!</p>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="section" id="destinations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Destinations</h2>
+                <p>Discover our most sought-after travel destinations that promise unforgettable experiences and
+                    breathtaking scenery.</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Bali, Indonesia">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Known as the Island of the Gods, Bali blends spectacular mountain scenery, beaches, and
+                            spiritual culture.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,299</span>
+                            <a href="#" class="btn">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Santorini, Greece">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Santorini, Greece</h3>
+                        <p>Famous for its dramatic views, stunning sunsets, and white-washed houses with blue domes.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,899</span>
+                            <a href="#" class="btn">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Kyoto, Japan">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Kyoto, Japan</h3>
+                        <p>Japan's ancient capital with over 1,000 Buddhist temples, beautiful gardens, and traditional
+                            tea houses.</p>
+                        <div class="destination-price">
+                            <span class="price">$2,199</span>
+                            <a href="#" class="btn">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="section" id="packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Travel Packages</h2>
+                <p>We've carefully crafted these travel packages to provide you with the best experiences at the best
+                    prices.</p>
+            </div>
+            <div class="packages-container">
+                <div class="package-card">
+                    <div class="package-badge">Popular</div>
+                    <div class="package-img">
+                        <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="European Adventure">
+                    </div>
+                    <div class="package-info">
+                        <h3>European Adventure</h3>
+                        <p>14-day tour through 5 European countries including France, Italy, Switzerland, Germany, and
+                            Austria.</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Guided tours in each city</li>
+                            <li><i class="fas fa-check"></i> 4-star accommodations</li>
+                            <li><i class="fas fa-check"></i> Breakfast included daily</li>
+                            <li><i class="fas fa-check"></i> Airport transfers</li>
+                        </ul>
+                        <div class="package-price">
+                            <div>
+                                <span class="price">$3,499</span>
+                                <span>per person</span>
+                            </div>
+                            <a href="#" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-badge">Best Value</div>
+                    <div class="package-img">
+                        <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Caribbean Paradise">
+                    </div>
+                    <div class="package-info">
+                        <h3>Caribbean Paradise</h3>
+                        <p>7-night all-inclusive stay at a luxury resort in the Bahamas with unlimited drinks and
+                            activities.</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> All-inclusive resort</li>
+                            <li><i class="fas fa-check"></i> Water sports equipment</li>
+                            <li><i class="fas fa-check"></i> Daily entertainment</li>
+                            <li><i class="fas fa-check"></i> Spa credit</li>
+                        </ul>
+                        <div class="package-price">
+                            <div>
+                                <span class="price">$1,799</span>
+                                <span>per person</span>
+                            </div>
+                            <a href="#" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-img">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="African Safari">
+                    </div>
+                    <div class="package-info">
+                        <h3>African Safari</h3>
+                        <p>10-day luxury safari in Tanzania with game drives, cultural experiences, and luxury tented
+                            camps.</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Expert safari guides</li>
+                            <li><i class="fas fa-check"></i> All meals included</li>
+                            <li><i class="fas fa-check"></i> Airport transfers</li>
+                            <li><i class="fas fa-check"></i> Photography workshop</li>
+                        </ul>
+                        <div class="package-price">
+                            <div>
+                                <span class="price">$4,999</span>
+                                <span>per person</span>
+                            </div>
+                            <a href="#" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Travel Gallery</h2>
+                <p>Browse through stunning images from our travelers' adventures around the world.</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item"
+                    data-image="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80">
+                    <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                        alt="Travel Image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-image="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80">
+                    <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                        alt="Travel Image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-image="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80">
+                    <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                        alt="Travel Image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-image="https://images.unsplash.com/photo-1491900177661-4e1cd2d7cce2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80">
+                    <img src="https://images.unsplash.com/photo-1491900177661-4e1cd2d7cce2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                        alt="Travel Image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-image="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80">
+                    <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                        alt="Travel Image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                    data-image="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80">
+                    <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                        alt="Travel Image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Traveler Testimonials</h2>
+                <p>Hear what our customers have to say about their experiences with Wanderlust Travels.</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                    </div>
+                    <p class="testimonial-text">Our European tour was absolutely perfect! Every detail was taken care
+                        of, and our guide was knowledgeable and friendly. We'll definitely be booking with Wanderlust
+                        again for our next adventure.</p>
+                    <h4 class="testimonial-author">Sarah Johnson</h4>
+                    <p class="testimonial-role">European Adventure, June 2023</p>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen">
+                    </div>
+                    <p class="testimonial-text">The African safari exceeded all our expectations. Seeing the Big Five in
+                        their natural habitat was a dream come true. The accommodations were luxurious and the staff
+                        went above and beyond.</p>
+                    <h4 class="testimonial-author">Michael Chen</h4>
+                    <p class="testimonial-role">African Safari, August 2023</p>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez">
+                    </div>
+                    <p class="testimonial-text">Our honeymoon in Bali was magical thanks to Wanderlust. They arranged
+                        private dinners on the beach, spa treatments, and even a surprise room upgrade. We couldn't have
+                        asked for more!</p>
+                    <h4 class="testimonial-author">Emily Rodriguez</h4>
+                    <p class="testimonial-role">Bali Honeymoon, May 2023</p>
+                </div>
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Widget -->
+    <div class="container">
+        <div class="weather-widget">
+            <div class="weather-header">
+                <div class="weather-location">Bali, ID</div>
+                <div class="weather-date">June 15</div>
+            </div>
+            <div class="weather-icon">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="weather-temp">86°F</div>
+            <div class="weather-desc">Sunny</div>
+            <div class="weather-details">
+                <div class="weather-detail">
+                    <i class="fas fa-wind"></i>
+                    <span>8 mph</span>
+                </div>
+                <div class="weather-detail">
+                    <i class="fas fa-tint"></i>
+                    <span>65%</span>
+                </div>
+                <div class="weather-detail">
+                    <i class="fas fa-umbrella"></i>
+                    <span>0%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Travel Blog</h2>
+                <p>Get inspired with travel stories, tips, and guides from our team and fellow travelers.</p>
+            </div>
+            <div class="blog-container">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">June 5, 2023</span>
+                        <h3>Top 10 Hidden Beaches in the Caribbean</h3>
+                        <p>Discover secluded paradise with our guide to the Caribbean's best-kept secret beaches away
+                            from the crowds.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> By Jessica Miller</span>
+                            <span><i class="far fa-comment"></i> 12 Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">May 22, 2023</span>
+                        <h3>Packing Like a Pro: Europe in One Carry-On</h3>
+                        <p>Learn how to pack efficiently for a two-week European trip using just one carry-on suitcase.
+                        </p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> By David Wilson</span>
+                            <span><i class="far fa-comment"></i> 8 Comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">May 10, 2023</span>
+                        <h3>Safari Photography: Capturing Wildlife Like a Pro</h3>
+                        <p>Expert tips on photographing African wildlife, from camera settings to composition
+                            techniques.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-user"></i> By Robert Johnson</span>
+                            <span><i class="far fa-comment"></i> 15 Comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="visitor-info">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about booking, payments, travel requirements, and more.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What documents do I need for international travel?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For international travel, you'll typically need a valid passport with at least 6 months
+                            validity beyond your return date. Many countries also require visas, which we can help you
+                            obtain. Always check the specific entry requirements for your destination at least 3 months
+                            before departure.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is your cancellation policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our cancellation policy varies depending on the package and supplier terms. Generally,
+                            cancellations made more than 60 days before departure receive a full refund minus a $200
+                            administrative fee. Between 30-60 days, 50% of the package price is refundable. Within 30
+                            days, packages are non-refundable. We strongly recommend purchasing travel insurance to
+                            protect your investment.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer travel insurance?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we partner with leading travel insurance providers to offer comprehensive coverage
+                            options. Our plans typically include trip cancellation/interruption, medical expenses,
+                            baggage loss/delay, and emergency evacuation. Insurance must be purchased within 14 days of
+                            your initial deposit to qualify for pre-existing condition coverage.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I customize my travel package?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our travel specialists can customize any package to suit your preferences,
+                            whether you want to extend your stay, upgrade accommodations, add special experiences, or
+                            combine destinations. Customizations may affect the package price, and we'll always provide
+                            a detailed quote before confirming any changes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What health precautions should I take before traveling?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Health requirements vary by destination. We recommend consulting with a travel medicine
+                            specialist 6-8 weeks before departure. Common precautions include vaccinations (like yellow
+                            fever or typhoid), malaria prophylaxis, and advice about food/water safety. The CDC's travel
+                            health website is an excellent resource for destination-specific recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section class="section" id="what-to-do">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sample Itinerary</h2>
+                <p>Get a glimpse of what a typical day looks like on one of our guided tours.</p>
+            </div>
+            <div class="itinerary-container">
+                <div class="itinerary-header">
+                    <h3 class="itinerary-title">European Highlights Tour</h3>
+                    <span>Day 1 of 10</span>
+                </div>
+                <div class="itinerary-days">
+                    <div class="itinerary-day active" data-day="1">Day 1</div>
+                    <div class="itinerary-day" data-day="2">Day 2</div>
+                    <div class="itinerary-day" data-day="3">Day 3</div>
+                    <div class="itinerary-day" data-day="4">Day 4</div>
+                    <div class="itinerary-day" data-day="5">Day 5</div>
+                </div>
+                <div class="itinerary-content active" data-day="1">
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">08:00 AM</div>
+                        <div class="itinerary-details">
+                            <h4>Arrival in Paris</h4>
+                            <p>Meet your guide at Charles de Gaulle Airport and transfer to your hotel in central Paris.
+                                Time to freshen up after your flight.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">10:30 AM</div>
+                        <div class="itinerary-details">
+                            <h4>Walking Tour: Historic Paris</h4>
+                            <p>Explore Île de la Cité, see Notre-Dame Cathedral, stroll along the Seine, and discover
+                                hidden gems of the Latin Quarter.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">01:00 PM</div>
+                        <div class="itinerary-details">
+                            <h4>Lunch at Local Bistro</h4>
+                            <p>Enjoy authentic French cuisine at a carefully selected bistro near the Sorbonne.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">03:00 PM</div>
+                        <div class="itinerary-details">
+                            <h4>Louvre Museum Visit</h4>
+                            <p>Skip-the-line access to the world's largest art museum. Your guide will highlight
+                                masterpieces including the Mona Lisa and Venus de Milo.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">07:30 PM</div>
+                        <div class="itinerary-details">
+                            <h4>Welcome Dinner</h4>
+                            <p>Gourmet dinner at a Michelin-recommended restaurant with panoramic views of the Eiffel
+                                Tower.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="itinerary-content" data-day="2">
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">08:30 AM</div>
+                        <div class="itinerary-details">
+                            <h4>Breakfast at Hotel</h4>
+                            <p>Start your day with a delicious French breakfast before heading out.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">10:00 AM</div>
+                        <div class="itinerary-details">
+                            <h4>Eiffel Tower Visit</h4>
+                            <p>Priority access to the second level of the Eiffel Tower for breathtaking views of Paris.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">12:30 PM</div>
+                        <div class="itinerary-details">
+                            <h4>Lunch Cruise on the Seine</h4>
+                            <p>Enjoy a gourmet lunch while cruising past Paris's iconic landmarks.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">02:30 PM</div>
+                        <div class="itinerary-details">
+                            <h4>Free Time for Exploration</h4>
+                            <p>Choose to visit Montmartre, shop on the Champs-Élysées, or relax at a sidewalk café.</p>
+                        </div>
+                    </div>
+                    <div class="itinerary-item">
+                        <div class="itinerary-time">07:00 PM</div>
+                        <div class="itinerary-details">
+                            <h4>Optional Evening Activity</h4>
+                            <p>Optional cabaret show at the Moulin Rouge or an evening stroll along the Seine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Have questions or ready to book your next adventure? Our travel experts are here to help.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Our Office</h3>
+                            <p>123 Travel Avenue, Suite 100<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567<br>Mon-Fri: 9am-6pm EST</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email Us</h3>
+                            <p>info@wanderlusttravels.com<br>bookings@wanderlusttravels.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday: 9:00 - 18:00<br>Saturday: 10:00 - 15:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="booking">Booking Question</option>
+                                <option value="custom">Custom Trip Request</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27826.307857331795!2d89.6165086171449!3d27.471221494679847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e194fc35b77db7%3A0x4285b964429aad6f!2sThimphu!5e0!3m2!1sen!2sbt!4v1718090134567!5m2!1sen!2sbt"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Wanderlust Travels is a premier travel agency specializing in creating unforgettable experiences
+                        around the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Travel Packages</a></li>
+                        <li><a href="#blog">Travel Blog</a></li>
+                        <li><a href="#visitor-info">Visitor Info</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Booking Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for travel inspiration, exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wanderlust Travels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-nav">
+                <button id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+                <button id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+
+    </body >
+</html >

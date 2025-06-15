@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust Travels | Start</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/stay.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Takin' A Tour">
+                <!-- <span>Takin'</span>A Tour -->
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="do.html">What to Do</a></li>
+                    <li><a href="stay.html">Where to Stay</a></li>
+                    <li><a href="eat.html">Where to Eat</a></li>
+                    <li><a href="visit.html">Visitor Info</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-traveling-along-a-coastal-road-with-a-view-of-the-sea-34455-large.mp4"
+                type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Explore. Dream. Discover.</h1>
+            <p>Embark on unforgettable journeys to the world's most breathtaking destinations with our expert travel
+                planners.</p>
+            <div class="hero-btns">
+                <a href="#destinations" class="btn">Explore Destinations</a>
+                <a href="#packages" class="btn btn-accent">Special Offers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="booking-form bg-white rounded-xl p-6 md:p-8 max-w-5xl mx-auto -mt-16 relative z-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Plan Your Stay</h2>
+                <form class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div>
+                        <label for="destination" class="block text-gray-700 mb-2">Destination</label>
+                        <select id="destination"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>Select Destination</option>
+                            <option>Bali, Indonesia</option>
+                            <option>Paris, France</option>
+                            <option>Tokyo, Japan</option>
+                            <option>New York, USA</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="check-in" class="block text-gray-700 mb-2">Check In</label>
+                        <input type="date" id="check-in"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="check-out" class="block text-gray-700 mb-2">Check Out</label>
+                        <input type="date" id="check-out"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="guests" class="block text-gray-700 mb-2">Guests</label>
+                        <select id="guests"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4+ Guests</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-4 flex justify-center mt-4">
+                        <button type="submit"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition duration-300">
+                            Search Accommodations
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Explore Accommodation Types</h2>
+
+            <div class="flex flex-wrap justify-center mb-8">
+                <button class="filter-tab px-6 py-2 mx-2 mb-2 rounded-full bg-blue-600 text-white font-medium"
+                    data-tab="all">All Stays</button>
+                <button
+                    class="filter-tab px-6 py-2 mx-2 mb-2 rounded-full bg-white text-gray-700 border border-gray-300 font-medium"
+                    data-tab="hotels">Hotels</button>
+                <button
+                    class="filter-tab px-6 py-2 mx-2 mb-2 rounded-full bg-white text-gray-700 border border-gray-300 font-medium"
+                    data-tab="resorts">Resorts</button>
+                <button
+                    class="filter-tab px-6 py-2 mx-2 mb-2 rounded-full bg-white text-gray-700 border border-gray-300 font-medium"
+                    data-tab="guesthouses">Guesthouses</button>
+                <button
+                    class="filter-tab px-6 py-2 mx-2 mb-2 rounded-full bg-white text-gray-700 border border-gray-300 font-medium"
+                    data-tab="budget">Budget</button>
+                <button
+                    class="filter-tab px-6 py-2 mx-2 mb-2 rounded-full bg-white text-gray-700 border border-gray-300 font-medium"
+                    data-tab="luxury">Luxury</button>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div class="max-w-md mx-auto mb-12">
+                <label for="price-range" class="block text-center text-gray-700 mb-4">Filter by Price Range</label>
+                <div class="flex items-center">
+                    <span class="text-gray-600 mr-2">$50</span>
+                    <input type="range" id="price-range" min="50" max="500" value="250"
+                        class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                    <span class="text-gray-600 ml-2">$500</span>
+                </div>
+                <div class="text-center mt-2">
+                    <span id="price-value" class="font-medium">Up to $250 per night</span>
+                </div>
+            </div>
+
+            <!-- Accommodation Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Hotel Card 1 -->
+                <div class="accommodation-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-xl"
+                    data-category="hotels luxury">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                            alt="Luxury Hotel" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">The Grand Balinese</h3>
+                            <span class="text-blue-600 font-bold">$320/night</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Ubud, Bali</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Free WiFi</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Pool</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Spa</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Breakfast</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <button class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resort Card -->
+                <div class="accommodation-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-xl"
+                    data-category="resorts luxury">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Beach Resort" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Paradise Beach Resort</h3>
+                            <span class="text-blue-600 font-bold">$280/night</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Nusa Dua, Bali</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Private Beach</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Spa</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Restaurant</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Ocean View</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                            <button class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guesthouse Card -->
+                <div class="accommodation-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-xl"
+                    data-category="guesthouses budget">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Cozy Guesthouse" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Bali Eco Guesthouse</h3>
+                            <span class="text-blue-600 font-bold">$85/night</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Canggu, Bali</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Eco-friendly</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Garden</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Breakfast</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Bicycle Rental</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                            <button class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 2 -->
+                <div class="accommodation-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-xl"
+                    data-category="hotels">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="City Hotel" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i>
+                            <span>4.6</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Urban Heights Hotel</h3>
+                            <span class="text-blue-600 font-bold">$190/night</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Seminyak, Bali</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">City View</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Fitness Center</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Restaurant</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">24/7 Front
+                                Desk</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                            <button class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budget Hotel -->
+                <div class="accommodation-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-xl"
+                    data-category="hotels budget">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Budget Hotel" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i>
+                            <span>4.2</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Bali Budget Inn</h3>
+                            <span class="text-blue-600 font-bold">$65/night</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Kuta, Bali</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Free WiFi</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Airport
+                                Shuttle</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">24/7 Front
+                                Desk</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <button class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Villa -->
+                <div class="accommodation-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-xl"
+                    data-category="resorts luxury">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1400&q=80"
+                            alt="Luxury Villa" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-yellow-400 text-black px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Ubud Luxury Villas</h3>
+                            <span class="text-blue-600 font-bold">$420/night</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Ubud, Bali</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Private Pool</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Butler Service</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Spa</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Jungle View</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <button class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Carousel -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Rooms</h2>
+
+            <div class="relative max-w-4xl mx-auto">
+                <div class="carousel-item active">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div class="h-80 overflow-hidden rounded-xl">
+                            <img src="https://images.unsplash.com/photo-1611892440501-4c2b79f5d21e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Deluxe Room" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Deluxe Ocean View Room</h3>
+                            <p class="text-gray-600 mb-4">Wake up to breathtaking ocean views in our spacious deluxe
+                                rooms. Featuring a king-size bed, private balcony, and modern amenities.</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 45 sqm
+                                    room with balcony</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> King-size
+                                    bed with premium linens</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>
+                                    Complimentary minibar (non-alcoholic)</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 24-hour
+                                    room service</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-blue-600">From $280/night</span>
+                                <button
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition duration-300">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div class="h-80 overflow-hidden rounded-xl">
+                            <img src="https://images.unsplash.com/photo-1566669437685-d2f5b5782b2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Family Suite" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Family Suite</h3>
+                            <p class="text-gray-600 mb-4">Our spacious family suites provide comfort for the whole
+                                family. Featuring a master bedroom, kids' room, and living area.</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 75 sqm
+                                    suite with separate rooms</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Master
+                                    bedroom with king bed</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Kids'
+                                    room with bunk beds</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>
+                                    Complimentary baby cot available</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-blue-600">From $350/night</span>
+                                <button
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition duration-300">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div class="h-80 overflow-hidden rounded-xl">
+                            <img src="https://images.unsplash.com/photo-1582719478468-3a29a1e9e7e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Private Villa" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Private Pool Villa</h3>
+                            <p class="text-gray-600 mb-4">Experience ultimate privacy in our luxurious pool villas. Each
+                                villa features a private infinity pool, outdoor shower, and tropical garden.</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 120 sqm
+                                    villa with private pool</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Outdoor
+                                    living and dining area</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Personal
+                                    butler service</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>
+                                    Complimentary daily breakfast</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-blue-600">From $550/night</span>
+                                <button
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition duration-300">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="prev-btn"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition duration-300">
+                    <i class="fas fa-chevron-left text-gray-700"></i>
+                </button>
+                <button id="next-btn"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition duration-300">
+                    <i class="fas fa-chevron-right text-gray-700"></i>
+                </button>
+
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="carousel-dot w-3 h-3 rounded-full bg-blue-600"></button>
+                    <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300"></button>
+                    <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Guests Say</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="text-gray-500">2 weeks ago</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The Grand Balinese exceeded all our expectations. The service was
+                        impeccable and the ocean view from our room was breathtaking!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J."
+                            class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-medium">Sarah J.</h4>
+                            <p class="text-gray-500 text-sm">Sydney, Australia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="text-gray-500">1 month ago</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">"We stayed at the Paradise Beach Resort for our honeymoon and it was
+                        magical. The private beach was perfect and the staff made us feel so special."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T."
+                            class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-medium">Michael T.</h4>
+                            <p class="text-gray-500 text-sm">London, UK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star-half-alt text-yellow-400"></i>
+                        </div>
+                        <span class="text-gray-500">3 weeks ago</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The Bali Eco Guesthouse was perfect for our family trip. The kids
+                        loved the garden and we appreciated the sustainable approach. Great value!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa K."
+                            class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-medium">Lisa K.</h4>
+                            <p class="text-gray-500 text-sm">Toronto, Canada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <h2 class="text-3xl font-bold mb-4">Get Travel Inspiration</h2>
+            <p class="text-xl mb-8">Sign up for our newsletter and receive exclusive deals and travel tips straight to
+                your inbox.</p>
+            <form class="flex flex-col sm:flex-row gap-4 justify-center">
+                <input type="email" placeholder="Your email address"
+                    class="px-6 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300 w-full sm:w-auto sm:max-w-md">
+                <button type="submit"
+                    class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-medium transition duration-300">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Wanderlust Travels is a premier travel agency specializing in creating unforgettable experiences
+                        around the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Travel Packages</a></li>
+                        <li><a href="#blog">Travel Blog</a></li>
+                        <li><a href="#visitor-info">Visitor Info</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Booking Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for travel inspiration, exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wanderlust Travels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-nav">
+                <button id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+                <button id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/stay.js"></script>
+
+
+</body>
+
+</html>

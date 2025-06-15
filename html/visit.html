@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust Travels | Start</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/visit.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Takin' A Tour">
+                <!-- <span>Takin'</span>A Tour -->
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="do.html">What to Do</a></li>
+                    <li><a href="stay.html">Where to Stay</a></li>
+                    <li><a href="eat.html">Where to Eat</a></li>
+                    <li><a href="visit.html">Visitor Info</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-traveling-along-a-coastal-road-with-a-view-of-the-sea-34455-large.mp4"
+                type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Explore. Dream. Discover.</h1>
+            <p>Embark on unforgettable journeys to the world's most breathtaking destinations with our expert travel
+                planners.</p>
+            <div class="hero-btns">
+                <a href="#destinations" class="btn">Explore Destinations</a>
+                <a href="#packages" class="btn btn-accent">Special Offers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Icon Info Blocks -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Quick Information</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Visa Info -->
+                <div class="info-card bg-white rounded-lg shadow-md p-6 transition-all duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Visa Requirements</h3>
+                    <p class="text-gray-600">Check if you need a visa before traveling. Most visitors can stay up to 90
+                        days visa-free.</p>
+                </div>
+
+                <!-- Transport Info -->
+                <div class="info-card bg-white rounded-lg shadow-md p-6 transition-all duration-300">
+                    <div class="text-green-500 text-4xl mb-4">
+                        <i class="fas fa-subway"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Public Transport</h3>
+                    <p class="text-gray-600">Efficient metro and bus system. Get a travel card for unlimited rides
+                        during your stay.</p>
+                </div>
+
+                <!-- Safety Info -->
+                <div class="info-card bg-white rounded-lg shadow-md p-6 transition-all duration-300">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Safety Tips</h3>
+                    <p class="text-gray-600">Generally safe, but beware of pickpockets in crowded areas. Emergency
+                        number: 112</p>
+                </div>
+
+                <!-- Language Info -->
+                <div class="info-card bg-white rounded-lg shadow-md p-6 transition-all duration-300">
+                    <div class="text-purple-500 text-4xl mb-4">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Local Language</h3>
+                    <p class="text-gray-600">English is widely spoken. Learn basic greetings like "Hello" (Hola) and
+                        "Thank you" (Gracias).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Checklist -->
+        <section class="mb-16 bg-blue-50 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Travel Checklist</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-blue-700">Before You Travel</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Check passport validity (6+ months remaining)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Purchase travel insurance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Notify your bank about travel plans</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Download offline maps and translation apps</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-blue-700">What to Pack</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-suitcase text-blue-500 mt-1 mr-3"></i>
+                            <span>Universal power adapter</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-suitcase text-blue-500 mt-1 mr-3"></i>
+                            <span>Comfortable walking shoes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-suitcase text-blue-500 mt-1 mr-3"></i>
+                            <span>Season-appropriate clothing (layers recommended)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-suitcase text-blue-500 mt-1 mr-3"></i>
+                            <span>Basic first aid kit and medications</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Local Laws & Etiquette -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Local Laws & Etiquette</h2>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-xl font-semibold mb-4 text-red-600">Important Laws</h3>
+                        <ul class="space-y-4">
+                            <li>
+                                <div class="font-medium">Drinking in Public</div>
+                                <p class="text-gray-600">Allowed in most areas except near schools and churches.</p>
+                            </li>
+                            <li>
+                                <div class="font-medium">Smoking</div>
+                                <p class="text-gray-600">Prohibited in all indoor public spaces. Fines up to €300.</p>
+                            </li>
+                            <li>
+                                <div class="font-medium">Photography</div>
+                                <p class="text-gray-600">Avoid taking photos of military installations or government
+                                    buildings.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-gray-50 p-8">
+                        <h3 class="text-xl font-semibold mb-4 text-green-600">Cultural Etiquette</h3>
+                        <ul class="space-y-4">
+                            <li>
+                                <div class="font-medium">Greetings</div>
+                                <p class="text-gray-600">A handshake is common. Close friends may greet with kisses on
+                                    both cheeks.</p>
+                            </li>
+                            <li>
+                                <div class="font-medium">Dining</div>
+                                <p class="text-gray-600">Keep hands visible on the table during meals. It's polite to
+                                    try everything served.</p>
+                            </li>
+                            <li>
+                                <div class="font-medium">Tipping</div>
+                                <p class="text-gray-600">10% is customary in restaurants if service isn't included.
+                                    Round up taxi fares.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Currency & Exchange Info -->
+        <section class="mb-16 bg-green-50 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Currency & Exchange</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-money-bill-wave text-green-600 text-3xl mr-4"></i>
+                        <div>
+                            <div class="text-2xl font-bold">EUR (€)</div>
+                            <div class="text-gray-600">Euro</div>
+                        </div>
+                    </div>
+                    <p>Official currency is the Euro. Some businesses may accept major credit cards, but cash is
+                        preferred in smaller establishments.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Exchange Tips</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-exchange-alt text-green-600 mt-1 mr-3"></i>
+                            <span>Best rates at banks and official exchange offices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-exchange-alt text-green-600 mt-1 mr-3"></i>
+                            <span>Avoid exchanging at airports/hotels (higher fees)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-exchange-alt text-green-600 mt-1 mr-3"></i>
+                            <span>Notify your bank before using cards abroad</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Approximate Rates</h3>
+                    <div class="bg-white rounded-lg p-4 shadow-sm">
+                        <div class="flex justify-between py-2 border-b">
+                            <span>1 USD</span>
+                            <span class="font-medium">≈ €0.92</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b">
+                            <span>1 GBP</span>
+                            <span class="font-medium">≈ €1.17</span>
+                        </div>
+                        <div class="flex justify-between py-2">
+                            <span>100 JPY</span>
+                            <span class="font-medium">≈ €0.64</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Rates fluctuate daily. Last updated today.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Info -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Current Weather</h2>
+            <div class="weather-card rounded-xl text-white overflow-hidden shadow-lg">
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-6">
+                        <div>
+                            <div class="text-2xl font-medium">Barcelona, Spain</div>
+                            <div class="text-lg">June 15, 2023</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-5xl font-bold">24°C</div>
+                            <div class="text-xl">Sunny</div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                            <div class="text-sm mb-1">Humidity</div>
+                            <div class="text-xl font-bold">65%</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                            <div class="text-sm mb-1">Wind</div>
+                            <div class="text-xl font-bold">12 km/h</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                            <div class="text-sm mb-1">Sunrise</div>
+                            <div class="text-xl font-bold">6:23 AM</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                            <div class="text-sm mb-1">Sunset</div>
+                            <div class="text-xl font-bold">9:19 PM</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-10 px-8 py-4">
+                    <div class="flex justify-between text-center">
+                        <div>
+                            <div>Mon</div>
+                            <div class="text-2xl">22°</div>
+                        </div>
+                        <div>
+                            <div>Tue</div>
+                            <div class="text-2xl">24°</div>
+                        </div>
+                        <div>
+                            <div>Wed</div>
+                            <div class="text-2xl">26°</div>
+                        </div>
+                        <div>
+                            <div>Thu</div>
+                            <div class="text-2xl">25°</div>
+                        </div>
+                        <div>
+                            <div>Fri</div>
+                            <div class="text-2xl">23°</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contacts -->
+        <section class="mb-16 bg-red-50 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Emergency Contacts</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-ambulance text-red-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Medical Emergency</h3>
+                        </div>
+                    </div>
+                    <div class="text-3xl font-bold text-red-600 mb-2">112</div>
+                    <p class="text-gray-600">Universal emergency number for ambulance, fire, and police.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-flag text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Your Embassy</h3>
+                        </div>
+                    </div>
+                    <div class="text-lg font-bold text-blue-600 mb-2">+34 93 123 4567</div>
+                    <p class="text-gray-600">Contact your country's embassy for passport issues or legal assistance.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-info-circle text-yellow-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Tourist Helpline</h3>
+                        </div>
+                    </div>
+                    <div class="text-lg font-bold text-yellow-600 mb-2">+34 902 123 456</div>
+                    <p class="text-gray-600">24/7 assistance in multiple languages for tourist-related issues.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section>
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="accordion bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full flex justify-between items-center p-6 text-left">
+                        <span class="text-lg font-medium">Do I need a visa to visit?</span>
+                        <i class="accordion-icon fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <div class="pb-6 text-gray-600">
+                            <p>Visa requirements depend on your nationality and length of stay. Citizens of EU
+                                countries, the US, Canada, Australia, and several others can visit for up to 90 days
+                                without a visa. Always check with your local embassy or consulate for the most current
+                                requirements before traveling.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full flex justify-between items-center p-6 text-left">
+                        <span class="text-lg font-medium">What's the best way to get around the city?</span>
+                        <i class="accordion-icon fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <div class="pb-6 text-gray-600">
+                            <p>The city has an excellent public transportation system including metro, buses, and trams.
+                                We recommend purchasing a T-10 ticket or a Hola BCN travel card for unlimited rides.
+                                Taxis are plentiful but more expensive. Many areas are also very walkable and
+                                bike-friendly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full flex justify-between items-center p-6 text-left">
+                        <span class="text-lg font-medium">Is tap water safe to drink?</span>
+                        <i class="accordion-icon fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <div class="pb-6 text-gray-600">
+                            <p>Yes, tap water is safe to drink throughout the city, though some visitors may notice a
+                                different taste due to mineral content. Many locals prefer bottled water, especially in
+                                restaurants. In very old buildings, it's advisable to let the tap run for a few seconds
+                                before drinking.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full flex justify-between items-center p-6 text-left">
+                        <span class="text-lg font-medium">What are typical opening hours for shops and
+                            restaurants?</span>
+                        <i class="accordion-icon fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <div class="pb-6 text-gray-600">
+                            <p>Most shops open around 9-10 AM and close for siesta between 2-5 PM, then reopen until 8-9
+                                PM. Larger stores and malls stay open all day. Restaurants typically serve lunch from
+                                1-4 PM and dinner from 8 PM until midnight. Breakfast is available in cafes from 7 AM
+                                onwards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full flex justify-between items-center p-6 text-left">
+                        <span class="text-lg font-medium">Are credit cards widely accepted?</span>
+                        <i class="accordion-icon fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6">
+                        <div class="pb-6 text-gray-600">
+                            <p>Major credit cards (Visa, MasterCard) are accepted in most hotels, restaurants, and
+                                larger stores. However, smaller shops, markets, and taxis may prefer cash. It's
+                                advisable to carry some euros, especially in smaller denominations (€5, €10, €20 notes).
+                                ATMs are widely available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Wanderlust Travels is a premier travel agency specializing in creating unforgettable experiences
+                        around the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Travel Packages</a></li>
+                        <li><a href="#blog">Travel Blog</a></li>
+                        <li><a href="#visitor-info">Visitor Info</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Booking Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for travel inspiration, exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wanderlust Travels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-nav">
+                <button id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+                <button id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/eat.js"></script>
+
+
+</body>
+
+</html>

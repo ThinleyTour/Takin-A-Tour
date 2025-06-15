@@ -1,0 +1,23 @@
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion.active .accordion-content {
+    max-height: 500px;
+    transition: max-height 0.3s ease-in;
+}
+
+.accordion.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card {
+    background: linear-gradient(135deg, #72b5f7 0%, #4a90e2 100%);
+}

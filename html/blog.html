@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust Travels | Start</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Takin' A Tour">
+                <!-- <span>Takin'</span>A Tour -->
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="do.html">What to Do</a></li>
+                    <li><a href="stay.html">Where to Stay</a></li>
+                    <li><a href="eat.html">Where to Eat</a></li>
+                    <li><a href="visit.html">Visitor Info</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-traveling-along-a-coastal-road-with-a-view-of-the-sea-34455-large.mp4"
+                type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Explore. Dream. Discover.</h1>
+            <p>Embark on unforgettable journeys to the world's most breathtaking destinations with our expert travel
+                planners.</p>
+            <div class="hero-btns">
+                <a href="#destinations" class="btn">Explore Destinations</a>
+                <a href="#packages" class="btn btn-accent">Special Offers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <div class="relative mb-8">
+                <input type="text" id="searchInput" placeholder="Search blog posts..."
+                    class="w-full px-6 py-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <button
+                    class="absolute right-2 top-2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition-all">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="filter-btn px-4 py-2 rounded-full bg-blue-600 text-white"
+                    data-category="all">All</button>
+                <button
+                    class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-blue-600 hover:text-white transition-all"
+                    data-category="adventure">Adventure</button>
+                <button
+                    class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-blue-600 hover:text-white transition-all"
+                    data-category="culture">Culture</button>
+                <button
+                    class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-blue-600 hover:text-white transition-all"
+                    data-category="food">Food</button>
+                <button
+                    class="filter-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-blue-600 hover:text-white transition-all"
+                    data-category="tips">Travel Tips</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editor's Picks -->
+    <section id="featured" class="bg-blue-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Editor's Picks</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Featured Post 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            alt="Santorini" class="w-full h-64 object-cover">
+                        <span
+                            class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Adventure</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Exploring the Hidden Trails of Santorini</h3>
+                        <p class="text-gray-600 mb-4">Discover the lesser-known paths of this Greek paradise, away from
+                            the tourist crowds...</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">June 15, 2023</span>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Post 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3bfdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            alt="Tokyo" class="w-full h-64 object-cover">
+                        <span
+                            class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Culture</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">A Food Lover's Guide to Tokyo's Night Markets</h3>
+                        <p class="text-gray-600 mb-4">From sizzling yakitori to delicate sushi, explore the vibrant
+                            street food scene of Tokyo...</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">May 28, 2023</span>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Post 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            alt="Patagonia" class="w-full h-64 object-cover">
+                        <span
+                            class="absolute top-4 right-4 bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-medium">Tips</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Essential Packing List for Patagonia Trekking</h3>
+                        <p class="text-gray-600 mb-4">Everything you need to know to prepare for the unpredictable
+                            weather of Patagonia...</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">April 10, 2023</span>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Blog Posts -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-12">Latest Travel Stories</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogPosts">
+            <!-- Blog Post 1 -->
+            <div class="blog-post bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all"
+                data-category="adventure">
+                <img src="https://images.unsplash.com/photo-1505832018823-50331d70d237?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="Iceland" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Chasing Waterfalls in Iceland's Highlands</h3>
+                    <p class="text-gray-600 mb-4">Our journey through Iceland's rugged interior revealed breathtaking
+                        waterfalls few tourists ever see...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">March 22, 2023</span>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-post bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all"
+                data-category="culture">
+                <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="Marrakech" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">48 Hours in Marrakech: A Sensory Overload</h3>
+                    <p class="text-gray-600 mb-4">The colors, smells, and sounds of Morocco's most vibrant city will
+                        stay with you long after you leave...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">February 15, 2023</span>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-post bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all"
+                data-category="food">
+                <img src="https://images.unsplash.com/photo-1510626176961-4b1d4f6d1e0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="Bali" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Bali's Best Warungs: Eating Like a Local</h3>
+                    <p class="text-gray-600 mb-4">Skip the tourist restaurants and discover where Balinese families go
+                        for authentic, affordable meals...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">January 30, 2023</span>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 4 -->
+            <div class="blog-post bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all"
+                data-category="tips">
+                <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="Airport" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">10 Airport Hacks for Stress-Free Travel</h3>
+                    <p class="text-gray-600 mb-4">From security lines to layovers, these tips will transform your
+                        airport experience from chaotic to calm...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">December 5, 2022</span>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 5 -->
+            <div class="blog-post bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all"
+                data-category="adventure">
+                <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="New Zealand" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Bungee Jumping in Queenstown: Facing My Fears</h3>
+                    <p class="text-gray-600 mb-4">The adventure capital of the world pushed me to conquer my fear of
+                        heights in the most exhilarating way...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">November 18, 2022</span>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 6 -->
+            <div class="blog-post bg-white rounded-xl overflow-hidden shadow-lg card-hover transition-all"
+                data-category="culture">
+                <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="Kyoto" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Kyoto in Autumn: A Photographer's Dream</h3>
+                    <p class="text-gray-600 mb-4">The ancient temples and gardens of Kyoto become even more magical when
+                        framed by fiery autumn leaves...</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">October 10, 2022</span>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <button
+                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition-all">Load
+                More Stories</button>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Travelers Say</h2>
+
+            <div class="max-w-4xl mx-auto relative">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide active bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-lg mb-6 italic">"The travel tips from this blog completely transformed
+                        our trip to Bali. We discovered hidden gems we would have never found on our own!"</p>
+                    <div class="flex items-center justify-center">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah J."
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah J.</h4>
+                            <p class="text-gray-600 text-sm">Sydney, Australia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-lg mb-6 italic">"Following the Patagonia packing list was a lifesaver!
+                        We were prepared for all weather conditions and could focus on enjoying the stunning
+                        landscapes."</p>
+                    <div class="flex items-center justify-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T."
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael T.</h4>
+                            <p class="text-gray-600 text-sm">Toronto, Canada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-700 text-lg mb-6 italic">"The detailed guides to Tokyo's food scene helped us
+                        navigate the overwhelming options. We ate like kings without breaking the bank!"</p>
+                    <div class="flex items-center justify-center">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emma L."
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Emma L.</h4>
+                            <p class="text-gray-600 text-sm">London, UK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button id="prevTestimonial"
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2 -ml-4 bg-white p-2 rounded-full shadow-md text-blue-600 hover:bg-blue-100 transition-all">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="nextTestimonial"
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2 -mr-4 bg-white p-2 rounded-full shadow-md text-blue-600 hover:bg-blue-100 transition-all">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Dots Navigation -->
+            <div class="flex justify-center mt-6 space-x-2">
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-blue-600 focus:outline-none"
+                    data-slide="0"></button>
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-blue-400 focus:outline-none"
+                    data-slide="1"></button>
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-blue-400 focus:outline-none"
+                    data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Get Travel Inspiration Directly to Your Inbox</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join our newsletter and receive weekly travel stories, exclusive
+                tips, and special offers.</p>
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address"
+                    class="flex-grow px-4 py-3 rounded-l-full focus:outline-none text-gray-900">
+                <button type="submit"
+                    class="bg-blue-800 hover:bg-blue-900 px-6 py-3 rounded-r-full font-medium transition-all">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Wanderlust Travels is a premier travel agency specializing in creating unforgettable experiences
+                        around the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Travel Packages</a></li>
+                        <li><a href="#blog">Travel Blog</a></li>
+                        <li><a href="#visitor-info">Visitor Info</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Booking Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for travel inspiration, exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wanderlust Travels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-nav">
+                <button id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+                <button id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/eat.js"></script>
+
+
+</body>
+
+</html>

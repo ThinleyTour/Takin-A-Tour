@@ -1,0 +1,62 @@
+/* Custom CSS for flip cards and animations */
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* Modal animation */
+.modal {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal[aria-hidden="true"] {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+
+.modal[aria-hidden="false"] {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Smooth transitions */
+.transition-slow {
+    transition: all 0.5s ease;
+}
+
+/* Custom food grid */
+@media (max-width: 640px) {
+    .food-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .food-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1025px) {
+    .food-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

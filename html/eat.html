@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust Travels | Start</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/eat.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Takin' A Tour">
+                <!-- <span>Takin'</span>A Tour -->
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="do.html">What to Do</a></li>
+                    <li><a href="stay.html">Where to Stay</a></li>
+                    <li><a href="eat.html">Where to Eat</a></li>
+                    <li><a href="visit.html">Visitor Info</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-traveling-along-a-coastal-road-with-a-view-of-the-sea-34455-large.mp4"
+                type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Explore. Dream. Discover.</h1>
+            <p>Embark on unforgettable journeys to the world's most breathtaking destinations with our expert travel
+                planners.</p>
+            <div class="hero-btns">
+                <a href="#destinations" class="btn">Explore Destinations</a>
+                <a href="#packages" class="btn btn-accent">Special Offers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-12">
+        <!-- Restaurant Cards Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Featured Eateries</h2>
+            <div class="food-grid grid gap-8">
+                <!-- Restaurant Card 1 -->
+                <div class="flip-card bg-white rounded-lg shadow-lg overflow-hidden transition-slow hover:shadow-xl">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                                alt="Restaurant" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">The Spice Route</h3>
+                                <div class="flex items-center mb-2">
+                                    <span
+                                        class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded mr-2">Indian</span>
+                                    <span
+                                        class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Vegetarian</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">Authentic Indian cuisine with a modern twist, featuring
+                                    tandoori specialties and rich curries.</p>
+                                <div class="flex items-center text-gray-500">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>11:00 AM - 10:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flip-card-back absolute inset-0 bg-amber-500 text-white p-6 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                            <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Food Street</p>
+                            <p class="mb-2"><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</p>
+                            <p class="mb-4"><i class="fas fa-globe mr-2"></i> www.spiceroute.com</p>
+                            <button
+                                class="mt-4 px-4 py-2 bg-white text-amber-600 font-semibold rounded-full transition-slow"
+                                onclick="openModal('modal1')">
+                                View Menu
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant Card 2 -->
+                <div class="flip-card bg-white rounded-lg shadow-lg overflow-hidden transition-slow hover:shadow-xl">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2098&q=80"
+                                alt="Restaurant" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Pasta Paradiso</h3>
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Italian</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">Handmade pasta and authentic Italian recipes passed down
+                                    through generations.</p>
+                                <div class="flex items-center text-gray-500">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>5:00 PM - 11:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flip-card-back absolute inset-0 bg-blue-500 text-white p-6 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                            <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 456 Gourmet Avenue</p>
+                            <p class="mb-2"><i class="fas fa-phone mr-2"></i> +1 (555) 987-6543</p>
+                            <p class="mb-4"><i class="fas fa-globe mr-2"></i> www.pastaparadiso.com</p>
+                            <button
+                                class="mt-4 px-4 py-2 bg-white text-blue-600 font-semibold rounded-full transition-slow"
+                                onclick="openModal('modal2')">
+                                View Menu
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant Card 3 -->
+                <div class="flip-card bg-white rounded-lg shadow-lg overflow-hidden transition-slow hover:shadow-xl">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                                alt="Restaurant" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Sushi Haven</h3>
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded mr-2">Japanese</span>
+                                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Seafood</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">Fresh sushi and sashimi prepared by master chefs with
+                                    ingredients flown in daily from Japan.</p>
+                                <div class="flex items-center text-gray-500">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    <span>12:00 PM - 10:30 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flip-card-back absolute inset-0 bg-red-500 text-white p-6 flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                            <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 789 Ocean Boulevard</p>
+                            <p class="mb-2"><i class="fas fa-phone mr-2"></i> +1 (555) 456-7890</p>
+                            <p class="mb-4"><i class="fas fa-globe mr-2"></i> www.sushihaven.com</p>
+                            <button
+                                class="mt-4 px-4 py-2 bg-white text-red-600 font-semibold rounded-full transition-slow"
+                                onclick="openModal('modal3')">
+                                View Menu
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Dishes Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Must-Try Dishes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Dish 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-slow hover:shadow-lg cursor-pointer"
+                    onclick="openModal('dishModal1')">
+                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                        alt="Dish" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Butter Chicken</h3>
+                        <p class="text-gray-600 text-sm">Creamy tomato-based curry with tender chicken</p>
+                        <div class="mt-3 flex justify-between items-center">
+                            <span class="text-amber-500 font-bold">$14.99</span>
+                            <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded">The Spice Route</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-slow hover:shadow-lg cursor-pointer"
+                    onclick="openModal('dishModal2')">
+                    <img src="https://images.unsplash.com/photo-1600091474842-83bb9c05a723?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                        alt="Dish" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Truffle Pasta</h3>
+                        <p class="text-gray-600 text-sm">Handmade fettuccine with black truffle sauce</p>
+                        <div class="mt-3 flex justify-between items-center">
+                            <span class="text-amber-500 font-bold">$18.50</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Pasta Paradiso</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-slow hover:shadow-lg cursor-pointer"
+                    onclick="openModal('dishModal3')">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="Dish" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Sushi Platter</h3>
+                        <p class="text-gray-600 text-sm">Chef's selection of 12 premium nigiri pieces</p>
+                        <div class="mt-3 flex justify-between items-center">
+                            <span class="text-amber-500 font-bold">$24.99</span>
+                            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Sushi Haven</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-slow hover:shadow-lg cursor-pointer"
+                    onclick="openModal('dishModal4')">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1971&q=80"
+                        alt="Dish" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Beef Pho</h3>
+                        <p class="text-gray-600 text-sm">Traditional Vietnamese noodle soup with rare beef</p>
+                        <div class="mt-3 flex justify-between items-center">
+                            <span class="text-amber-500 font-bold">$12.75</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Pho Street</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Local Favorites Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Local Favorites</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 text-amber-600">Hidden Gems</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-amber-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-utensils text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Mama Rosa's Kitchen</h4>
+                                    <p class="text-gray-600 text-sm">Family-run Italian spot with the best homemade
+                                        lasagna in town.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-amber-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-drumstick-bite text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Uncle Joe's BBQ Shack</h4>
+                                    <p class="text-gray-600 text-sm">Smoky, tender meats with secret family recipes for
+                                        over 30 years.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-amber-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-ice-cream text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Sweet Tooth Creamery</h4>
+                                    <p class="text-gray-600 text-sm">Artisanal ice cream with rotating seasonal flavors.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="h-full">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2098&q=80"
+                            alt="Local restaurant" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Street Food Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Street Food Hotspots</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Street Food 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-slow hover:shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="Street food" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Night Market</h3>
+                        <p class="text-gray-600 mb-3">Open-air market with dozens of food stalls offering everything
+                            from dumplings to grilled seafood.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Downtown Square</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500 mt-1">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>6:00 PM - Midnight (Fri-Sun)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Street Food 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-slow hover:shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80"
+                        alt="Street food" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Taco Alley</h3>
+                        <p class="text-gray-600 mb-3">Authentic Mexican street tacos with handmade tortillas and fresh
+                            salsas.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>5th Street & Elm</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500 mt-1">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>11:00 AM - 9:00 PM (Daily)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Street Food 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-slow hover:shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="Street food" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Food Truck Park</h3>
+                        <p class="text-gray-600 mb-3">Rotating selection of gourmet food trucks with outdoor seating and
+                            live music.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Riverside Park</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-500 mt-1">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>4:00 PM - 10:00 PM (Wed-Sun)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Find These Eateries</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=40.7128,-74.0060&zoom=13&size=1200x400&maptype=roadmap&markers=color:red%7C40.7128,-74.0060&markers=color:blue%7C40.7150,-74.0110&markers=color:green%7C40.7100,-74.0010&key=YOUR_API_KEY"
+                    alt="Map of restaurant locations" class="w-full h-auto">
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-red-500 rounded-full mr-2"></div>
+                            <span>The Spice Route</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-blue-500 rounded-full mr-2"></div>
+                            <span>Pasta Paradiso</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-4 h-4 bg-green-500 rounded-full mr-2"></div>
+                            <span>Sushi Haven</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Wanderlust Travels is a premier travel agency specializing in creating unforgettable experiences
+                        around the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Travel Packages</a></li>
+                        <li><a href="#blog">Travel Blog</a></li>
+                        <li><a href="#visitor-info">Visitor Info</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Booking Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for travel inspiration, exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wanderlust Travels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-nav">
+                <button id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+                <button id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/eat.js"></script>
+
+
+</body>
+
+</html>
