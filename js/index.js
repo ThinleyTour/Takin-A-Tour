@@ -58,3 +58,28 @@ function updateCountdown() {
 }
 
 updateCountdown();
+
+
+const apiKey = "98131f209f473a98cbc82f1c3772de6f"; // <-- Replace with your OpenWeatherMap API key
+const city = "Thimphu";
+const units = "metric";
+
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`)
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("description").textContent = data.weather[0].description;
+        document.getElementById("temp").textContent = Math.round(data.main.temp);
+        document.getElementById("humidity").textContent = data.main.humidity;
+        document.getElementById("wind").textContent = data.wind.speed;
+    })
+    .catch(error => {
+        document.getElementById("description").textContent = "Unable to load weather.";
+        console.error("Error fetching weather:", error);
+    });
+
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+});
